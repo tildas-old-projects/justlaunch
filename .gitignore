@@ -1,0 +1,16 @@
+# Ultralight resources
+# I'm not allowed to include these because of restrictive license
+# Wouldn't be that great to include them anyways
+bin/
+libAppCore.so
+libUltralight.so
+libUltralightCore.so
+libWebCore.so
+include/
+inspector/
+license/
+samples/
+
+# Build files
+public/node_modules
+webfiles/
