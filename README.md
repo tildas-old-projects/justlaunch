@@ -20,6 +20,7 @@ Requirements:
 - change the place where the OS searches for the libraries
 
 I personally use the 2nd option: `env LD_LIBRARY_PATH=bin ./justlaunch`
+
 **TODO:** Only works on Linux, figure out what Windows and Mac do
 
 
