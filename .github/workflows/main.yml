@@ -16,7 +16,7 @@ jobs:
         sudo apt-get install -y golang-go p7zip-full yarn nodejs
         echo "== Installing Ultralight libraries"
         wget https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-linux-x64.7z
-        7z x ultralight-sdk-latest-linux-x64.7z
+        7z x ultralight-sdk-latest-linux-x64.7z bin
     - name: Build frontend
       run: |
         cd public
