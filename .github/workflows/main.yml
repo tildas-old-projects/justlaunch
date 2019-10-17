@@ -13,8 +13,17 @@ jobs:
       run: |
         echo "== Installing required packages =="
         sudo apt-get update
-        sudo apt-get install -y golang-go p7zip-full yarn nodejs
-        echo "== Installing Ultralight libraries"
+        sudo apt-get install -y p7zip-full yarn nodejs
+        echo "== Installing Go 1.13.2 =="
+        wget https://dl.google.com/go/go1.13.2.linux-amd64.tar.gz
+        tar xf go1.13.2.linux-amd64.tar.gz
+        export GOROOT=/usr/local/go
+        export GOPATH=$HOME/go
+        export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+        mkdir ~/go
+        sudo mv go /usr/local
+        go version
+        echo "== Installing Ultralight libraries =="
         wget https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-linux-x64.7z
         7z x ultralight-sdk-latest-linux-x64.7z bin
     - name: Build frontend
