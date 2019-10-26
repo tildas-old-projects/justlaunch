@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-
+	"os"
 	"github.com/ImVexed/muon"
 
 	"justlaunch/webfiles"
@@ -23,6 +23,9 @@ func main() {
 
 	instance := muon.New(cfg, fileHandler)
 
+	if !Checkforfile(Getmaindir()) {
+		os.MkdirAll(Getmaindir(), os.ModePerm)
+	}
 	if err := instance.Start(); err != nil {
 		fmt.Println("PLEASE REPORT: https://github.com/tilda/justlaunch/issues")
 		panic(err)
