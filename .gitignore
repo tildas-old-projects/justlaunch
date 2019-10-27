@@ -12,5 +12,5 @@ license/
 samples/
 
 # Build files
-public/node_modules
+node_modules/
 webfiles/
