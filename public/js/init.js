@@ -1,5 +1,5 @@
 function init () {
   if (!checkJava()) {
-    document.getElementById('java-not-found').style('display:block')
+    document.getElementById('java-not-found').classList.add('p-centered')
   }
 }

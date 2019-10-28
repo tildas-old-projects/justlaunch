@@ -30,7 +30,6 @@ func main() {
 	// It's way better to just call it from the frontend.
 	instance.Bind("checkJava", Checkjava)
 	instance.Bind("die", Exitapp)
-
 	if !Checkforfile(Getmaindir()) {
 		os.MkdirAll(Getmaindir(), os.ModePerm)
 	}
