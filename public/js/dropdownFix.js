@@ -1,3 +1,0 @@
-const dropdownFix = function() {
-    // TODO
-}
