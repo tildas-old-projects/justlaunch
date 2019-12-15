@@ -1,0 +1,15 @@
+name: 'justlaunch'
+version: '0.0.0'
+author: 'S Stewart'
+about: 'Minecraft launcher focused on modded'
+subcommands:
+  - install:
+    about: Creates a profile for a Minecraft version or modpack
+  - update:
+    about: Updates a out of date modpack
+  - uninstall:
+    about: Removes all traces of the profile (irreversible!)
+  - launch:
+    about: Attempts to launch an installed profile
+  - search:
+    about: Searches CurseForge for mods/modpacks.

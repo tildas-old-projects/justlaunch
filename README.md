@@ -1,27 +1,19 @@
-# Just Launch The Game
+# justlaunch
 
-WIP Minecraft launcher written in Go
+A CLI Minecraft launcher focused on modding.
 
-# Building
+# Install
 
-Requirements: 
-- [Go 1.13 or above](https://golang.org)
-- [Ultralight latest](https://github.com/ultralight-ux/ultralight#getting-the-latest-sdk)
-- [Yarn](https://yarnpkg.com)
-- [fileb0x](https://github.com/UnnoTed/fileb0x)
+In the future, there will be binaries available. But for now, I'm not going to publish any as it would be pointless.
 
-1. Extract the libraries (located in the `bin` folder inside the archive) from Ultralight's SDK into the repository. The other stuff can be safely deleted.
-2. Go into the `public` folder and run `yarn` to download the needed files for the frontend.
-3. Go back into the root of the repo and run `go generate` to generate the frontend webfiles. (or: `fileb0x b0x.yml`)
-4. Run `go build` to get a `justlaunch` executable.
+If you really want, you can compile it yourself, so here's some directions.
 
-**Note:** The executable is dynamically linked, so you'll either need:
-- the Ultralight libraries installed in your path
-- change the place where the OS searches for the libraries
+**Requirements:**
 
-I personally use the 2nd option: `env LD_LIBRARY_PATH=bin ./justlaunch`
+- [A rust compiler](https://rustup.sh)
+- A terminal
+- A functioning brain
 
-**TODO:** Only works on Linux, figure out what Windows and Mac do
+Just run the following command in the repository: `cargo build --release`
 
-
-
+It will take a little while, but once it's done, you should have a optimized binary ready for usage.
