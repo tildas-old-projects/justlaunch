@@ -13,3 +13,5 @@ subcommands:
     about: Attempts to launch an installed profile
   - search:
     about: Searches CurseForge for mods/modpacks.
+  - import:
+    about: Imports a modpack from a ZIP file.

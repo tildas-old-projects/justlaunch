@@ -13,7 +13,9 @@ fn send_back_error(stream: UnixStream) {
 }
 
 fn main() {
-    let listener = UnixListener::bind("/tmp/justlaunchd.sock").unwrap();
+    let listener = UnixListener::bind("/tmp/justlaunchd.sock")
+        .unwrap()
+        .expect("Could not bind to socket");
 
     for stream in listener.incoming() {
         match stream {
