@@ -19,6 +19,7 @@ The cilent and daemon will share a unix socket (I think that works, right?) as a
 Glossary:
 - **Profile**: A directory where launcher specific files are stored for configuration as well as the modpack's own data.
 - **File ID**: CurseForge assigns each uploaded file an ID that can be used to refer to the file. Used in downloads, etc.
+- **Modpack ID**: A set of numbers that CurseForge assigns a modpack. Generally useless IMO, but I have to deal with it.
 - **Modpack**: Generally, a modpack is considered a collection of mods and mod configurations that change Minecraft.
 
 
