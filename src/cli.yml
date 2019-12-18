@@ -5,13 +5,39 @@ about: 'Minecraft launcher focused on modded'
 subcommands:
   - install:
     about: Creates a profile for a Minecraft version or modpack
+    args:
+      - modpack:
+        - help: The modpack you wish to install
+      - version:
+        - help: The version of the modpack you wish to install (latest by default)
+        - default_value: latest
   - update:
     about: Updates a out of date modpack
+    args:
+      - profile:
+        - help: The name of the profile you wish to update
   - uninstall:
     about: Removes all traces of the profile (irreversible!)
+    args:
+      - profile:
+        - help: The name of the profile you wish to delete
   - launch:
     about: Attempts to launch an installed profile
+    args:
+      - profile:
+        - help: The name of the profile you wish to launch
   - search:
     about: Searches CurseForge for mods/modpacks.
+    args:
+      - type:
+        - help: Either mods or modpacks.
+      - term:
+        - help: What you want to search.
   - import:
     about: Imports a modpack from a ZIP file.
+    args:
+      - zip-file:
+        - help: Path to a Curse-formatted ZIP file.
+      - name:
+        - help: The name you wish to give the profile.
+        - default_value: filename
