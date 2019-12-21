@@ -7,7 +7,7 @@ fn figure_out_function(stream: UnixStream) {
     return;
 }
 
-fn send_back_error(stream: UnixStream) {
+fn send_back_error(error: u32, stream: UnixStream) {
     // I also haven't figured this out yet.
     return;
 }
