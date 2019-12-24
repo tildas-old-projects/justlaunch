@@ -7,4 +7,7 @@ pub fn main() {
     let schema = load_yaml!("cli.yml");
     let matches = App::from_yaml(schema).get_matches();
     let mut daemon = UnixStream::connect("/tmp/justlaunchd.sock").unwrap();
+
+    // For future me:
+    // if let Some(matches) = matches.subcommand_matches(subcommand) {}
 }
