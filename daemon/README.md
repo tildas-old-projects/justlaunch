@@ -34,5 +34,6 @@ The client can send commands to the daemon socket:
 The server can send responses back through the socket:
 - `ok` Simply a acknowledgement; "I'm on my way!"
 - `general-error` Some programming error happened. In this case, check the logs for a stack trace.
+- `waiting` Installation is still happening.
 - `permission-denied` The daemon cannot access the requested directory for installation.
 - `done` It's ready to go.
