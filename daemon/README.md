@@ -4,17 +4,20 @@ This directory contains code for the justlaunch daemon.
 
 The purpose of this software is for the CLI to communicate with to install things (i.e. the justlaunch CLI is just a client).
 
-It handles all the magic, including installation, extraction, launching, and much much more. Basically if you removed this out of the equation, nothing would work.
+It handles all the magic, including installation, extraction, launching, etc. Basically if you removed this out of the equation, nothing would work.
 
-All of this should fit in a light package. After all I'm developing this on a computer with 4gb of RAM.
+All of this should fit in a light package. We aren't going for any Twitch-style things.
 
 # How it works (hopefully)
 
-The daemon will be sent messages through a unix socket. (Windows isn't focused on, y'all have Twitch anyways.)
-Why not HTTP? Local HTTP servers are a security risk.
+TBD: Find good communication method
+
+Requirements:
+- Easy to implement, somewhat
+- Not HTTP
+- Can go both ways
 
 # Commands/the specification
-The cilent and daemon will share a unix socket (I think that works, right?) as a 2 way communication method.
 
 Glossary:
 - **Profile**: A directory where launcher specific files are stored for configuration as well as the modpack's own data.
